@@ -8,6 +8,7 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX yso: <http://www.yso.fi/onto/yso/>
 PREFIX yso-update: <http://www.yso.fi/onto/yso-update/>
 PREFIX yso-meta: <http://www.yso.fi/onto/yso-meta/2007-03-02/>
+
 INSERT {
     ?uusi_1 rdf:type yso-meta:Concept ;
         skos:prefLabel "arawakilaiset kielet"@fi ;
@@ -473,7 +474,7 @@ INSERT {
         rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
         skos:altLabel "wakusjiska språk"@sv ;
         yso-meta:singularAltLabel "wakusjiskt språk"@sv ; .
-}} WHERE {
+} WHERE {
     BIND( xsd:date(SUBSTR( xsd:string(now()), 0, 11)) AS ?now )
     BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_1 )
     BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_6 )
@@ -517,3 +518,4 @@ INSERT {
     BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_336 )
     BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_341 )
     BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_346 )}
+

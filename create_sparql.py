@@ -25,9 +25,9 @@ def generate_sparql_update(csv_file):
             singular_alt_fi = [label.strip() for label in row.get("Kielikunnan piilotetun ohjaustermin yksikkömuoto = singular alternative", "").split(", ") if label]
             singular_alt_sv = [label.strip() for label in row.get("sv singular alternative", "").split(", ") if label]
             notes = [row.get("pelkästään dataan tuleva note = preflabel sensitiivinen", "").strip(), row.get("Kommenttikenttään tuleva teksti (skos-note)", "").strip()]
-            notes = [note for note in notes if note]  # Remove empty values
+            notes = [note for note in notes if note]  # Poistetaan tyhjät arvot
 
-            # Unique variable for each concept
+            # Uniikki uri kaikille
             concept_var = f"?uusi_{index}"
 
             concept_triples = [
@@ -76,7 +76,6 @@ INSERT {{
 
     return sparql_query
 
-# Example usage
 csv_file_path = "ValmisYSOlle_Etelä-ja-Pohjois-Amerikan_kielikuntatiedot.csv"
 sparql_output = generate_sparql_update(csv_file_path)
 print(sparql_output)
