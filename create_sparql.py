@@ -18,6 +18,8 @@ def generate_sparql_update(csv_file):
             preflabel_fi = row.get("Valittu käsite YSO-sanastossa = preflabel", "").strip()
             concept_label_en = row.get("Kielikunnan nimi englanniksi", "").strip()
 
+            # Vaikka Excel-datassa lukee hidden, niin alt_labels_fi sisältää oikeasti altLabeleita ja sellaisena ne viedään dataan. 
+            # En halunnut epäyhtenäistää masterdataa, niin jätin tällaiseksi
             alt_labels_fi = [label.strip() for label in row.get("Piilotetut ohjaustermit = hidden labelit YSO-sanastossa", "").split(", ") if label]
             alt_labels_sv = [label.strip() for label in row.get("sv alternative", "").split(", ") if label]
             singular_pref_fi = row.get("Kielikunnan yksikkömuoto = singular pref", "").strip()
@@ -66,9 +68,10 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX yso: <http://www.yso.fi/onto/yso/>
 PREFIX yso-update: <http://www.yso.fi/onto/yso-update/>
 PREFIX yso-meta: <http://www.yso.fi/onto/yso-meta/2007-03-02/>
+
 INSERT {{
     """ + "\n\n    ".join(triples) + """
-}} WHERE {
+} WHERE {
     BIND( xsd:date(SUBSTR( xsd:string(now()), 0, 11)) AS ?now )
     """ + "\n    ".join(binds) + """
 }

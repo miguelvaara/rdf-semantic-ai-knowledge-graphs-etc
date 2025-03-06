@@ -1,0 +1,520 @@
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX yso: <http://www.yso.fi/onto/yso/>
+PREFIX yso-update: <http://www.yso.fi/onto/yso-update/>
+PREFIX yso-meta: <http://www.yso.fi/onto/yso-meta/2007-03-02/>
+
+INSERT {
+    ?uusi_1 rdf:type yso-meta:Concept ;
+        skos:prefLabel "arawakilaiset kielet"@fi ;
+        skos:prefLabel "Arawakan / Arawak / Maipurean"@en ;
+        skos:prefLabel "arawak (språkfamiljer)"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "arawakilainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "arawakkikielet"@fi ;
+        skos:altLabel "maipurakielet"@fi ;
+        skos:altLabel "arawakiska språk"@sv ;
+        skos:altLabel "arawakspråk"@sv ;
+        yso-meta:singularAltLabel "arawakkikieli"@fi ;
+        yso-meta:singularAltLabel "maipurakieli"@fi ;
+        yso-meta:singularAltLabel "arawakiskt språk"@sv ; .
+
+    ?uusi_6 rdf:type yso-meta:Concept ;
+        skos:prefLabel "mapuchelaiset kielet"@fi ;
+        skos:prefLabel "Araucanian (G, WP) / Mapudungu (E) / Mapuche languages (WP)"@en ;
+        skos:prefLabel "araukiska språk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "mapuchelainen kieli"@fi ;
+        yso-meta:singularPrefLabel "araukiskt språk"@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "araukaanilaiset kielet"@fi ;
+        skos:altLabel "araukanska språk"@sv ;
+        skos:altLabel "mapuche (språkfamiljer)"@sv ;
+        yso-meta:singularAltLabel "araukaanilainen kieli"@fi ;
+        yso-meta:singularAltLabel "araukanskt språk"@sv ; .
+
+    ?uusi_16 rdf:type yso-meta:Concept ;
+        skos:prefLabel "aimarakielet"@fi ;
+        skos:prefLabel "Aymaran (G, E, WP) / Jaqi/Aru (WP)"@en ;
+        skos:prefLabel "aymara (språkfamiljer)"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "aimarakieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "aymaraspråk"@sv ; .
+
+    ?uusi_21 rdf:type yso-meta:Concept ;
+        skos:prefLabel "barbakolaiset kielet"@fi ;
+        skos:prefLabel "Barbacoan"@en ;
+        skos:prefLabel "barbacoanska språk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "barbakolainen kieli"@fi ;
+        yso-meta:singularPrefLabel "barbacoanskt språk"@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_31 rdf:type yso-meta:Concept ;
+        skos:prefLabel "bororolaiset kielet"@fi ;
+        skos:prefLabel "Bororoan (G, E) / Borôroan (WP) / Borotuke"@en ;
+        skos:prefLabel "bororo (språkfamiljer)"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "bororolainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_41 rdf:type yso-meta:Concept ;
+        skos:prefLabel "karibilaiset kielet"@fi ;
+        skos:prefLabel "Cariban (G, E, WP)"@en ;
+        skos:prefLabel "karibspråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "karibilainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "karibiska språk"@sv ;
+        yso-meta:singularAltLabel "karibiskt språk"@sv ; .
+
+    ?uusi_51 rdf:type yso-meta:Concept ;
+        skos:prefLabel "chibchalaiset kielet"@fi ;
+        skos:prefLabel "Chibchan (G, E, WP)"@en ;
+        skos:prefLabel "chibchaspråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "chibchalainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "tšibtšalaiset kielet"@fi ;
+        yso-meta:singularAltLabel "tšibtšalainen kieli"@fi ; .
+
+    ?uusi_56 rdf:type yso-meta:Concept ;
+        skos:prefLabel "chichamilaiset kielet"@fi ;
+        skos:prefLabel "Chicham (G, WP) / Jivaroan (WP, WALS)"@en ;
+        skos:prefLabel "jívarospråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "chimchamilainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_61 rdf:type yso-meta:Concept ;
+        skos:prefLabel "chocolaiset kielet"@fi ;
+        skos:prefLabel "Chocoan (G, E, WP) / Choco languages / Chocó / Chokó (WP)"@en ;
+        skos:prefLabel "chocóspråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "chocolainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_66 rdf:type yso-meta:Concept ;
+        skos:prefLabel "chonkielet"@fi ;
+        skos:prefLabel "Chonan"@en ;
+        skos:prefLabel "chonspråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "chonkieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_71 rdf:type yso-meta:Concept ;
+        skos:prefLabel "cochimilais-yumalaiset kielet"@fi ;
+        skos:prefLabel "Cochimi-Yuman"@en ;
+        skos:prefLabel "yuma-cochimí-språk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "cochimilais-yumalainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_81 rdf:type yso-meta:Concept ;
+        skos:prefLabel "guahibolaiset kielet"@fi ;
+        skos:prefLabel "Guahiboan (G) / Guajiboan (E, WP) / Guahiban (WALS) / Wahívoan (WP)"@en ;
+        skos:prefLabel "guahibospråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "guahibolainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "guahibo (språkfamiljer)"@sv ; .
+
+    ?uusi_86 rdf:type yso-meta:Concept ;
+        skos:prefLabel "guaycurulaiset kielet"@fi ;
+        skos:prefLabel "Guaicuruan (G) / Guaykuruan (E)"@en ;
+        skos:prefLabel "guaicurúspråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "guyacurulainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "guaycurú (språkfamiljer)"@sv ;
+        dct:editorialNote "Nimitystä guaycurulaiset kielet pidetään halventavana, mutta se on vakiintunut käyttöön."@fi ; .
+
+    ?uusi_91 rdf:type yso-meta:Concept ;
+        skos:prefLabel "harakmbutkielet"@fi ;
+        skos:prefLabel "Harakmbut"@en ;
+        skos:prefLabel "harakmbetspråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "harakmbutkieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_131 rdf:type yso-meta:Concept ;
+        skos:prefLabel "ketšualaiset kielet"@fi ;
+        skos:prefLabel "Quechuan"@en ;
+        skos:prefLabel "quechua (språkfamiljer)"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "ketšualainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "quechuanska språk"@sv ;
+        yso-meta:singularAltLabel "quechuanskt språk"@sv ; .
+
+    ?uusi_141 rdf:type yso-meta:Concept ;
+        skos:prefLabel "makro-je-kielet"@fi ;
+        skos:prefLabel "Nuclear Macro-Je (G) / Macro-Jê / Macro-Gê (WP)"@en ;
+        skos:prefLabel "makro-ge-språk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "makro-je-kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "makro-jê-kielet"@fi ;
+        yso-meta:singularAltLabel "makro-jê-kieli"@fi ; .
+
+    ?uusi_146 rdf:type yso-meta:Concept ;
+        skos:prefLabel "mataguaylaiset kielet"@fi ;
+        skos:prefLabel "Matacoan (G, E, WP) / Mataguayan / Matákoan / Mataguayo / Mataco-Mataguayo / Matacoano / Matacoana (WP)"@en ;
+        skos:prefLabel "mataco (språkfamiljer)"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "mataguaylainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_151 rdf:type yso-meta:Concept ;
+        skos:prefLabel "misumalpakielet"@fi ;
+        skos:prefLabel "Misumalpan (G, E, WP) / Misumalpa / Misuluan (WP)"@en ;
+        skos:prefLabel "misumalpaspråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "misumalpakieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_156 rdf:type yso-meta:Concept ;
+        skos:prefLabel "mixeläis-zoquelaiset kielet"@fi ;
+        skos:prefLabel "Mixe-Zoque (G, WP) / Mixe-Zoquean (E, WP) / Mije-Soke / Mije-Sokean (WP)"@en ;
+        skos:prefLabel "mixe-zoque (språkfamiljer)"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "mixeläis-zoquelainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "mihe-sokelaiset kielet"@fi ;
+        skos:altLabel "mixe-zoqueanska språk"@sv ;
+        yso-meta:singularAltLabel "mihe-sokelainen kieli"@fi ;
+        yso-meta:singularAltLabel "mixe-zoqueanskt språk"@sv ; .
+
+    ?uusi_166 rdf:type yso-meta:Concept ;
+        skos:prefLabel "nambikwaralaiset kielet"@fi ;
+        skos:prefLabel "Nambiquaran (G) / Nambikwara (E, WP)"@en ;
+        skos:prefLabel "nambicuara (språkfamiljer)"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "nambikwaralainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "nambikwara (språkfamiljer)"@sv ; .
+
+    ?uusi_171 rdf:type yso-meta:Concept ;
+        skos:prefLabel "otomangelaiset kielet"@fi ;
+        skos:prefLabel "Otomanguean"@en ;
+        skos:prefLabel "oto-mangueanska språk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel ""@fi ;
+        yso-meta:singularPrefLabel "oto-mangueanskt språk"@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_191 rdf:type yso-meta:Concept ;
+        skos:prefLabel "tekistlateekkikielet"@fi ;
+        skos:prefLabel "Tequistlatecan (G, E, WP) / Chontal (WP)"@en ;
+        skos:prefLabel "tequistlatekanspråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "tekistlateekkikieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_196 rdf:type yso-meta:Concept ;
+        skos:prefLabel "totonaakkikielet"@fi ;
+        skos:prefLabel "Totonacan (G, E, WP) / Totonac-Tepehua (WP)"@en ;
+        skos:prefLabel "totonakiska språk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "totonaakkikieli"@fi ;
+        yso-meta:singularPrefLabel "totonakiskt språk"@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_201 rdf:type yso-meta:Concept ;
+        skos:prefLabel "tukanolaiset kielet"@fi ;
+        skos:prefLabel "Tucanoan (G, E, WP) / Tukanoan / Tukánoan (WP)"@en ;
+        skos:prefLabel "tucanospråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "tukanolainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_206 rdf:type yso-meta:Concept ;
+        skos:prefLabel "tupilaiset kielet"@fi ;
+        skos:prefLabel "Tupian"@en ;
+        skos:prefLabel "tupíspråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "tupilainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "tupí (språkfamiljer)"@sv ; .
+
+    ?uusi_211 rdf:type yso-meta:Concept ;
+        skos:prefLabel "urulais-chipayalaiset kielet"@fi ;
+        skos:prefLabel "Uru-Chipaya"@en ;
+        skos:prefLabel "uru-chipaya (språkfamiljer)"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "urulais-chipayalainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "uru-chipayaspråk"@sv ; .
+
+    ?uusi_226 rdf:type yso-meta:Concept ;
+        skos:prefLabel "zamucolaiset kielet"@fi ;
+        skos:prefLabel "Zamucoan"@en ;
+        skos:prefLabel "zamuco (språkfamiljer)"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "zamucolainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_241 rdf:type yso-meta:Concept ;
+        skos:prefLabel "algilaiset kielet"@fi ;
+        skos:prefLabel "Algic (G, E, WP) / Algonquian-Wiyot-Yurok / Algonquian-Ritwan (WP)"@en ;
+        skos:prefLabel "algiska språk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "algilainen kieli"@fi ;
+        yso-meta:singularPrefLabel "algiskt språk"@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_246 rdf:type yso-meta:Concept ;
+        skos:prefLabel "na-deneläiset kielet"@fi ;
+        skos:prefLabel "Athabaskan-Eyak-Tlingit (G, WP) / Eyak-Athabaskan (E) / Na-Dene / Nadene / Na-Dené / Tlina-Dene (WP)"@en ;
+        skos:prefLabel "na-denespråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "na-deneläinen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "na-dene (språkfamiljer)"@sv ; .
+
+    ?uusi_251 rdf:type yso-meta:Concept ;
+        skos:prefLabel "caddolaiset kielet"@fi ;
+        skos:prefLabel "Caddoan"@en ;
+        skos:prefLabel "caddo (språkfamiljer)"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "caddolainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "caddoanska språk"@sv ;
+        yso-meta:singularAltLabel "caddoanskt språk"@sv ; .
+
+    ?uusi_261 rdf:type yso-meta:Concept ;
+        skos:prefLabel "chinookilaiset kielet"@fi ;
+        skos:prefLabel "Chinookan"@en ;
+        skos:prefLabel "chinook (språkfamiljer)"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "chinookilainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_266 rdf:type yso-meta:Concept ;
+        skos:prefLabel "chumashilaiset kielet"@fi ;
+        skos:prefLabel "Chumashan"@en ;
+        skos:prefLabel "chumashspråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "chumashilainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_296 rdf:type yso-meta:Concept ;
+        skos:prefLabel "keresiläiset kielet"@fi ;
+        skos:prefLabel "Keresan"@en ;
+        skos:prefLabel "keres (språkfamiljer)"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "keresiläinen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "keresan (språkfamiljer)"@sv ; .
+
+    ?uusi_301 rdf:type yso-meta:Concept ;
+        skos:prefLabel "kiowalais-tanolaiset kielet"@fi ;
+        skos:prefLabel "Kiowa-Tanoan"@en ;
+        skos:prefLabel "kiowa-tanoanska språk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "kiowalais-tanolainen kieli"@fi ;
+        yso-meta:singularPrefLabel "kiowa-tanoanskt språk"@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "tanoanska språk"@sv ;
+        yso-meta:singularAltLabel "tanoanskt språk"@sv ; .
+
+    ?uusi_306 rdf:type yso-meta:Concept ;
+        skos:prefLabel "maidulaiset kielet"@fi ;
+        skos:prefLabel "Maiduan"@en ;
+        skos:prefLabel "maidu (språkfamiljer)"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "maidulainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_311 rdf:type yso-meta:Concept ;
+        skos:prefLabel "utilaiset kielet"@fi ;
+        skos:prefLabel "Miwok-Costanoan (G) / Utian (WP, Golla 2011)"@en ;
+        skos:prefLabel "utispråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "utilainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_316 rdf:type yso-meta:Concept ;
+        skos:prefLabel "muskogeelaiset kielet"@fi ;
+        skos:prefLabel "Muskogean"@en ;
+        skos:prefLabel "muskogeanska språk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "muskogeelainen kieli"@fi ;
+        yso-meta:singularPrefLabel "muskogeanskt språk"@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_321 rdf:type yso-meta:Concept ;
+        skos:prefLabel "pomolaiset kielet"@fi ;
+        skos:prefLabel "Pomoan"@en ;
+        skos:prefLabel "pomospråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "pomolainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_331 rdf:type yso-meta:Concept ;
+        skos:prefLabel "salishilaiset kielet"@fi ;
+        skos:prefLabel "Salishan (G) / Salish (E)"@en ;
+        skos:prefLabel "saliska språk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "salishilainen kieli"@fi ;
+        yso-meta:singularPrefLabel "saliskt språk"@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "sališilaiset kielet"@fi ;
+        skos:altLabel "salish (språkfamiljer)"@sv ;
+        yso-meta:singularAltLabel "sališilainen kieli"@fi ; .
+
+    ?uusi_336 rdf:type yso-meta:Concept ;
+        skos:prefLabel "siouxkielet"@fi ;
+        skos:prefLabel "Siouan (G) / Siouan-Catawban (E)"@en ;
+        skos:prefLabel "siouxspråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "siouxkieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ; .
+
+    ?uusi_341 rdf:type yso-meta:Concept ;
+        skos:prefLabel "tsimshianilaiset kielet"@fi ;
+        skos:prefLabel "Tsimshian (G, E) / Tsimshianic (WALS, WP)"@en ;
+        skos:prefLabel "tsimshian (språkfamiljer)"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "tsimshianilainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "tsimšikielet"@fi ;
+        skos:altLabel "tsimshianspråk"@sv ;
+        yso-meta:singularAltLabel "tsimšikieli"@fi ; .
+
+    ?uusi_346 rdf:type yso-meta:Concept ;
+        skos:prefLabel "wakashilaiset kielet"@fi ;
+        skos:prefLabel "Wakashan"@en ;
+        skos:prefLabel "wakashspråk"@sv ;
+        dct:created ?now ;
+        yso-meta:hasThematicGroup yso:p26557 ;
+        yso-meta:singularPrefLabel "wakashilainen kieli"@fi ;
+        yso-meta:singularPrefLabel ""@sv ;
+        rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;
+        skos:altLabel "wakusjiska språk"@sv ;
+        yso-meta:singularAltLabel "wakusjiskt språk"@sv ; .
+} WHERE {
+    BIND( xsd:date(SUBSTR( xsd:string(now()), 0, 11)) AS ?now )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_1 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_6 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_16 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_21 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_31 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_41 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_51 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_56 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_61 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_66 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_71 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_81 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_86 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_91 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_131 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_141 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_146 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_151 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_156 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_166 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_171 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_191 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_196 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_201 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_206 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_211 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_226 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_241 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_246 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_251 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_261 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_266 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_296 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_301 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_306 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_311 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_316 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_321 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_331 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_336 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_341 )
+    BIND( IRI(CONCAT(str(yso:),'g',struuid())) AS ?uusi_346 )}
