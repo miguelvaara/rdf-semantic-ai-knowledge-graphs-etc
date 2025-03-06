@@ -9,6 +9,9 @@ def generate_sparql_update(csv_file):
         reader = csv.DictReader(file, skipinitialspace=True)
 
         for index, row in enumerate(reader):
+            # Homme perustuu ruotsinkieliseen prefLabeliin eli jos sellainen löytyy datasta, niin käsite on jo ysossa ja vientiä ei tehdä.
+            # Lisäksi, jos sv preflabel -kentässä on uri, niin se indikoi, että käsite on jo olemassa ja silloinkaan ei viedä.
+            # Huom!!! Myöhemmin, muiden kielikuntien kohdalla ei välttämättä ole nyt mainittua ruotsi-ehtoa, ja silloin skriptiä pitää vähän tuunata.
             sv_preflabel_column = "sv preflabel (löytyy lähteistä Nationalencyklopedin, SAO, Wikipedia, Lexvo tms. vakiintunut käyttö)  Tyhjä=luotettavaa sv-muotoa ei ole löydetty. Mahdollinen linkki jo olemassa olevaan YSO-käsitteeseen"
             sv_preflabel = row.get(sv_preflabel_column, "").strip()
 
@@ -41,8 +44,11 @@ def generate_sparql_update(csv_file):
                 f'    yso-meta:hasThematicGroup yso:p26557 ;',
                 f'    yso-meta:singularPrefLabel "{singular_pref_fi}"@fi ;',
                 f'    yso-meta:singularPrefLabel "{singular_pref_sv}"@sv ;',
-                f'    rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;'
+                f'    rdfs:subClassOf yso-update:uudet, yso-update:uudetEn, yso:p3749 ;'
+                f'    skos:related yso:p19079 ;'
             ]
+
+            # f'    rdfs:subClassOf yso-update:uudet, yso-update:uudetSv, yso-update:uudetEn, yso-update:uudetSme ;'
 
             for alt in alt_labels_fi:
                 concept_triples.append(f'    skos:altLabel "{alt}"@fi ;')
